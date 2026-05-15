@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace BetterVehicleCamera
+namespace CameraTweaks
 {
-	public class BetterVehicleCamera : MonoBehaviour
+	public class CameraTweaks : MonoBehaviour
 	{
-		public BetterVehicleCamera(IntPtr ptr) : base(ptr) { }
+		public CameraTweaks(IntPtr ptr) : base(ptr) { }
 
 		private Player _player;
 		private bool _initialised;

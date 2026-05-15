@@ -11,9 +11,6 @@
   </Target>
 
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\SteamLibrary\steamapps\common\Outbound\BepInEx\core\0Harmony.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\SteamLibrary\steamapps\common\Outbound\BepInEx\interop\Assembly-CSharp.dll</HintPath>
     </Reference>
