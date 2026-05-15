@@ -24,6 +24,14 @@ namespace CameraTweaks
 				return;
 			}
 
+			HandleScroll();
+		}
+
+		private void HandleScroll()
+		{
+			if (!Plugin.EnableScrolling.Value)
+				return;
+
 			if (_player.GetPlayerState != PlayerState.Driving)
 				return;
 
