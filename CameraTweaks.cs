@@ -29,7 +29,7 @@ namespace CameraTweaks
 
 		private void HandleScroll()
 		{
-			if (!Plugin.EnableScrolling.Value)
+			if (!Settings.EnableScrolling.Value)
 				return;
 
 			if (_player.GetPlayerState != PlayerState.Driving)
@@ -42,7 +42,7 @@ namespace CameraTweaks
 			if (scroll == 0f) return;
 
 			var position = _player.drivingThirdPersonCameraPosition;
-			float newZ = Mathf.Clamp(position.z + scroll * Plugin.ScrollSpeed.Value * Time.deltaTime, MaxDistance, MinDistance);
+			float newZ = Mathf.Clamp(position.z + scroll * Settings.ScrollSpeed.Value * Time.deltaTime, MaxDistance, MinDistance);
 			_player.drivingThirdPersonCameraPosition = new Vector3(position.x, position.y, newZ);
 		}
 	}
