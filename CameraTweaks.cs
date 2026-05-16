@@ -34,6 +34,9 @@ namespace CameraTweaks
 				return;
 			}
 
+			if (_player == null)
+				_initialised = false;
+
 			HandleThirdPersonScroll();
 			HandleZoom();
 		}
